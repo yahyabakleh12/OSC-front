@@ -1,0 +1,25 @@
+//
+// Theme style
+//
+
+// Initialize
+@import "init";
+
+// Components
+@import "./core/components/components";
+@import "components/components";
+
+// Layout
+@import "layout/layout";
+
+
+// --- Fix: Hide Google Maps default InfoWindow close button ---
+.gm-ui-hover-effect,
+.gm-style-iw-tc, .gm-style-iw-chr {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+.gm-style .gm-style-iw-c {
+  padding: 0 !important;
+}
